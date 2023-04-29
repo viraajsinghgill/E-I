@@ -21,7 +21,7 @@ const AdvertWdiget = () => {
         width="100%"
         height="auto"
         alt="advert"
-        src="e-i-95qw-17afnhths-viraajsinghgill.vercel.app/assets/EY.jpeg"
+        src="http://localhost:3001/assets/EY.jpeg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>
@@ -37,7 +37,7 @@ const AdvertWdiget = () => {
         width="100%"
         height="auto"
         alt="advert"
-        src="e-i-95qw-17afnhths-viraajsinghgill.vercel.app/assets/NZ.jpeg"
+        src="http://localhost:3001/assets/NZ.jpeg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>
@@ -57,7 +57,7 @@ const AdvertWdiget = () => {
         width="100%"
         height="auto"
         alt="advert"
-        src="e-i-95qw-17afnhths-viraajsinghgill.vercel.app/assets/GOV.jpeg"
+        src="http://localhost:3001/assets/GOV.jpeg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>
