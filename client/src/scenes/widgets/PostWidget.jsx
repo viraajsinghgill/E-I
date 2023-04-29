@@ -23,9 +23,9 @@ const PostWidget = ({
   likes,
   comments,
 }) => {
-  const [isComments, setIsComments] = useState();
+  const [isComments, setIsComments] = useState(false);
   const dispatch = useDispatch();
-  const token = useSelector((state) => state.user.friends);
+  const token = useSelector((state) => state.token);
   const loggedInUserId = useSelector((state) => state.user._id);
   const isLiked = Boolean(likes[loggedInUserId]);
   const likeCount = Object.keys(likes).length;
@@ -41,7 +41,7 @@ const PostWidget = ({
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
-      bodt: JSON.stringify({ userId: loggedInUserId }),
+      body: JSON.stringify({ userId: loggedInUserId }),
     });
     const updatedPost = await response.json();
     dispatch(setPost({ post: updatedPost }));
@@ -92,20 +92,21 @@ const PostWidget = ({
           <ShareOutlined />
         </IconButton>
       </FlexBetween>
-      {isComments &&(
+      {isComments && (
         <Box mt="0.5rem">
-            {comments.map((comment,i) => (
-                <Box key={`${name}-${i}`}>
-                    <Divider/>
-                    <Typography sx={{color:main,m:"0.5rem 0",p1:"1rem"}}>
-                        {comment}
-                    </Typography>
-                </Box>
-            ))}
-            <Divider/>
+          {comments.map((comment, i) => (
+            <Box key={`${name}-${i}`}>
+              <Divider />
+              <Typography sx={{ color: main, m: "0.5rem 0", pl: "1rem" }}>
+                {comment}
+              </Typography>
+            </Box>
+          ))}
+          <Divider />
         </Box>
       )}
     </WidgetWrapper>
   );
 };
+
 export default PostWidget;
