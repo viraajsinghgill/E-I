@@ -13,6 +13,7 @@ React.Js,Node.Js,Express.Js,MongoDB) in our College Minor Project
 <img width="230" alt="image" src="https://github.com/viraajsinghgill/E-I/assets/125380557/7b37d504-b7ad-4423-b97f-9e9eb7fbe5f5">
 <img width="227" alt="image" src="https://github.com/viraajsinghgill/E-I/assets/125380557/b0310d48-34c3-4093-ade6-1d6465915657">
 <img width="234" alt="image" src="https://github.com/viraajsinghgill/E-I/assets/125380557/6e39075c-5fce-400e-a99b-ef372f85b30d">
+<img width="230" alt="image" src="https://github.com/viraajsinghgill/E-I/assets/125380557/1bab31f9-229c-4f8f-adb0-21d6866e4ded">
 
 
 Event and Internship (E&I) is a web application developed using React for the frontend and Express, Mongoose, and other libraries for the backend. The application allows users to create an account, log in, and post events and internships. Users can also interact with each other through connections and view sponsored advertisements. The application also supports dark mode and light mode.
